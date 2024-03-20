@@ -49,3 +49,7 @@ Route::get('/RestPassword', function () {
 Route::get('/BroadCast', function () {
     return view('BroadCast');
 });
+
+Route::get('/Referral', function () {
+    return view('Referral');
+});

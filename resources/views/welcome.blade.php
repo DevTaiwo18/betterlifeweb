@@ -1039,6 +1039,18 @@
                     </li>
                 </a>
 
+                <a href="{{ url('Referral') }}">
+                    <li>
+                        <div class="b">
+                            <div class=" custom-radius">
+                                <i class="bi-solid bi-gear"></i>
+                            </div>
+                            <span>Referral</span>
+                        </div>
+                        <i class="bi bi-chevron-right arrow-right"></i>
+                    </li>
+                </a>
+
             </ul>
         </nav>
 
