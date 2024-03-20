@@ -20,3 +20,32 @@ Route::get('/', function () {
 Route::get('/tx', function () {
     return view('tx');
 });
+
+
+Route::get('/tv', function () {
+    return view('tv');
+});
+
+Route::get('/Hanmodata', function () {
+    return view('Hanmodata');
+});
+
+Route::get('/Admin', function () {
+    return view('Admin');
+});
+
+Route::get('/ApiSetting', function () {
+    return view('ApiSetting');
+});
+
+Route::get('/Reverse', function () {
+    return view('Reverse');
+});
+
+Route::get('/RestPassword', function () {
+    return view('RestPassword');
+});
+
+Route::get('/BroadCast', function () {
+    return view('BroadCast');
+});

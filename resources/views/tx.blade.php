@@ -60,52 +60,12 @@
     </section>
     <script>
         const staticTransactions = [{
-                TransactionID: '20220730124890ref',
-                Time: '10:00 AM',
-                Receiver: 'Alice',
-                Network: 'Network1',
-                BalBefore: '₦1000',
-                BalAfter: '₦900',
-                Amount: '₦100',
-                Status: 'Completed'
-            },
-            {
-                TransactionID: '20220730124030ref',
-                Time: '11:00 AM',
-                Receiver: 'Bob',
-                Network: 'Network2',
-                BalBefore: '₦2000',
-                BalAfter: '₦1900',
-                Amount: '₦100',
-                Status: 'Completed'
-            },
-            {
-                TransactionID: '20220730904030ref',
-                Time: '10:00 AM',
-                Receiver: 'Alice',
-                Network: 'Network1',
-                BalBefore: '₦1000',
-                BalAfter: '₦900',
-                Amount: '₦100',
-                Status: 'Completed'
-            },
-            {
-                TransactionID: '20220730124890ref',
-                Time: '11:00 AM',
-                Receiver: 'Bob',
-                Network: 'Network2',
-                BalBefore: '₦2000',
-                BalAfter: '₦1900',
-                Amount: '₦100',
-                Status: 'Completed'
-            },
-            {
                 TransactionID: '20220730123950ref',
                 Time: '30-07-2022 4:39:50am',
                 Receiver: '08034263407',
                 Network: 'MTN',
-                BalBefore: '₦0',
-                BalAfter: '₦0',
+                "Bal.B4": '₦0',
+                'Bal.A': '₦0',
                 Amount: '₦100',
                 Status: 'Failed'
             },
@@ -114,8 +74,8 @@
                 Time: '30-07-2022 4:40:30am',
                 Receiver: '08022332233',
                 Network: 'Airtel',
-                BalBefore: '₦0',
-                BalAfter: '₦0',
+                "Bal.B4": '₦0',
+                'Bal.A': '₦0',
                 Amount: '₦100',
                 Status: 'Failed'
             },
@@ -124,8 +84,8 @@
                 Time: '12-08-2022 11:56:09am',
                 Receiver: '08123456789',
                 Network: 'GLO',
-                BalBefore: '₦0',
-                BalAfter: '₦0',
+                "Bal.B4": '₦0',
+                'Bal.A': '₦0',
                 Amount: '₦500',
                 Status: 'Completed'
             },
@@ -134,8 +94,8 @@
                 Time: '12-08-2022 12:08:21pm',
                 Receiver: '09098765432',
                 Network: '9mobile',
-                BalBefore: '₦0',
-                BalAfter: '₦0',
+                "Bal.B4": '₦0',
+                'Bal.A': '₦0',
                 Amount: '₦200',
                 Status: 'Completed'
             },
@@ -144,8 +104,8 @@
                 Time: '12-08-2022 12:22:03pm',
                 Receiver: '08087654321',
                 Network: 'Airtel',
-                BalBefore: '₦0',
-                BalAfter: '₦0',
+                "Bal.B4": '₦0',
+                'Bal.A': '₦0',
                 Amount: '₦300',
                 Status: 'Completed'
             },
@@ -154,8 +114,8 @@
                 Time: '12-08-2022 12:35:15pm',
                 Receiver: '07011223344',
                 Network: 'MTN',
-                BalBefore: '₦0',
-                BalAfter: '₦0',
+                "Bal.B4": '₦0',
+                'Bal.A': '₦0',
                 Amount: '₦400',
                 Status: 'Completed'
             },
@@ -164,8 +124,8 @@
                 Time: '12-08-2022 12:47:29pm',
                 Receiver: '08134567890',
                 Network: 'GLO',
-                BalBefore: '₦0',
-                BalAfter: '₦0',
+                "Bal.B4": '₦0',
+                'Bal.A': '₦0',
                 Amount: '₦600',
                 Status: 'Failed'
             }
@@ -173,26 +133,32 @@
 
         function updateTable(action) {
             const headers = {
-                'Transfer': ['TransactionID', 'Time', 'Receiver', 'Sender', "Bal Before", 'Bal After', 'Amount',
+                'Transfer': ['TransactionID', 'Time', 'Receiver', 'Sender', "Bal.B4", 'Bal.A', 'Amount',
                     'Source', 'Status'
                 ],
-                'Fund Deposit': ['TransactionID', 'Time', 'User', 'Methods', "Bal Before", 'Bal After', 'Amount',
+                'Fund Deposit': ['TransactionID', 'Time', 'User', 'Methods', "Bal.B4", 'Bal.A', 'Amount',
                     'Source', 'Status'
                 ],
-                'static': ['TransactionID', 'Time', 'Receiver', 'Network', 'Bal Before', 'Bal After', 'Amount',
+                'static': ['TransactionID', 'Time', 'Receiver', 'Network', "Bal.B4", 'Bal.A', 'Amount',
                     'Status'
                 ],
-                'Data subscription': ['TransactionID', 'Time', 'Receiver', 'Network', 'Bal Before', 'Bal After',
+                'Data subscription': ['TransactionID', 'Time', 'Receiver', 'Network', "Bal.B4", 'Bal.A',
                     'Amount',
                     'Status'
                 ],
-                "Airtime": ['TransactionID', 'Time', 'Receiver', 'Network', 'Bal Before', 'Bal After',
+                "Airtime": ['TransactionID', 'Time', 'Receiver', 'Network', "Bal.B4", 'Bal.A',
                     'Amount',
                     'Status'
                 ],
-                "Airtime 2 cash": [],
+                "Airtime 2 cash": ['TransactionID', 'Time', 'Sender', 'Receiver', "Bal.B4", 'Bal.A',
+                    'Amount',
+                    'Status'
+                ],
                 "Bill Payment": [],
-                "cablie $ Tv": [],
+                "cable & Tv": ['TransactionID', 'Time', 'Receiver', 'DISCO', "Bal.B4", 'Bal.A',
+                    'Amount', 'Sources',
+                    'Status'
+                ],
                 "Merchant Upgrade": []
             };
 
@@ -202,8 +168,8 @@
                         Time: '05-03-2024 4:11:57pm',
                         Receiver: 'makanjuola Balikis',
                         Sender: 'BETTERLIFE',
-                        BalBefore: '₦4,241,614',
-                        BalAfter: '₦4,241,418',
+                        "Bal.B4": '₦4,241,614',
+                        'Bal.A': '₦4,241,418',
                         Amount: '₦196',
                         Status: 'Completed'
                     },
@@ -212,8 +178,8 @@
                         Time: '05-03-2024 4:11:28pm',
                         Receiver: 'makanjuola Balikis',
                         Sender: 'BETTERLIFE',
-                        BalBefore: '₦4,242,302',
-                        BalAfter: '₦4,241,614',
+                        "Bal.B4": '₦4,242,302',
+                        'Bal.A': '₦4,241,614',
                         Amount: '₦688',
                         Status: 'Completed'
                     },
@@ -222,8 +188,8 @@
                         Time: '05-03-2024 4:9:33pm',
                         Receiver: 'makanjuola Balikis',
                         Sender: 'BETTERLIFE',
-                        BalBefore: '₦4,242,792',
-                        BalAfter: '₦4,242,302',
+                        "Bal.B4": '₦4,242,792',
+                        'Bal.A': '₦4,242,302',
                         Amount: '₦490',
                         Status: 'Completed'
                     },
@@ -232,8 +198,8 @@
                         Time: '01-03-2024 1:35:30am',
                         Receiver: 'Idowu Either John',
                         Sender: 'BETTERLIFE',
-                        BalBefore: '₦4,247,087',
-                        BalAfter: '₦4,247,038',
+                        "Bal.B4": '₦4,247,087',
+                        'Bal.A': '₦4,247,038',
                         Amount: '₦49',
                         Status: 'Completed'
                     },
@@ -242,8 +208,8 @@
                         Time: '02-03-2024 9:30:45am',
                         Receiver: 'Samuel Adekunle',
                         Sender: 'BETTERLIFE',
-                        BalBefore: '₦5,000,000',
-                        BalAfter: '₦4,999,800',
+                        "Bal.B4": '₦5,000,000',
+                        'Bal.A': '₦4,999,800',
                         Amount: '₦200',
                         Status: 'Completed'
                     },
@@ -252,8 +218,8 @@
                         Time: '02-03-2024 10:15:30am',
                         Receiver: 'Joy Emeka',
                         Sender: 'BETTERLIFE',
-                        BalBefore: '₦4,999,800',
-                        BalAfter: '₦4,999,500',
+                        "Bal.B4": '₦4,999,800',
+                        'Bal.A': '₦4,999,500',
                         Amount: '₦300',
                         Status: 'Completed'
                     },
@@ -262,8 +228,8 @@
                         Time: '02-03-2024 11:00:00am',
                         Receiver: 'Peter Osinbajo',
                         Sender: 'BETTERLIFE',
-                        BalBefore: '₦4,999,500',
-                        BalAfter: '₦4,999,200',
+                        "Bal.B4": '₦4,999,500',
+                        'Bal.A': '₦4,999,200',
                         Amount: '₦300',
                         Status: 'Completed'
                     },
@@ -272,8 +238,8 @@
                         Time: '02-03-2024 11:45:00am',
                         Receiver: 'Linda Igho',
                         Sender: 'BETTERLIFE',
-                        BalBefore: '₦4,999,200',
-                        BalAfter: '₦4,999,000',
+                        "Bal.B4": '₦4,999,200',
+                        'Bal.A': '₦4,999,000',
                         Amount: '₦200',
                         Status: 'Completed'
                     },
@@ -282,8 +248,8 @@
                         Time: '02-03-2024 12:30:00pm',
                         Receiver: 'Chukwudi Eze',
                         Sender: 'BETTERLIFE',
-                        BalBefore: '₦4,999,000',
-                        BalAfter: '₦4,998,700',
+                        "Bal.B4": '₦4,999,000',
+                        'Bal.A': '₦4,998,700',
                         Amount: '₦300',
                         Status: 'Completed'
                     }
@@ -294,8 +260,8 @@
                         Time: '06-03-2024 6:45:50pm',
                         User: 'oluwafunto olusola aladesola',
                         Methods: 'Bank Transfer',
-                        'Bal Before': '₦14.04',
-                        'Bal After': '₦1,014.04',
+                        "Bal.B4": '₦14.04',
+                        'Bal.A': '₦1,014.04',
                         Amount: '₦1,000',
                         Source: '',
                         Status: 'Completed'
@@ -305,8 +271,8 @@
                         Time: '06-03-2024 6:26:59pm',
                         User: 'adekunle hammed yussuf',
                         Methods: 'Bank Transfer',
-                        'Bal Before': '₦110.4',
-                        'Bal After': '₦610.4',
+                        "Bal.B4": '₦110.4',
+                        'Bal.A': '₦610.4',
                         Amount: '₦500',
                         Source: '',
                         Status: 'Completed'
@@ -316,8 +282,8 @@
                         Time: '06-03-2024 2:48:41pm',
                         User: 'ALARAPE TOPE KEHINDE',
                         Methods: 'Bank Transfer',
-                        'Bal Before': '₦735',
-                        'Bal After': '₦2,235',
+                        "Bal.B4": '₦735',
+                        'Bal.A': '₦2,235',
                         Amount: '₦1,500',
                         Source: '',
                         Status: 'Completed'
@@ -327,8 +293,8 @@
                         Time: '06-03-2024 2:46:50pm',
                         User: '2071072823',
                         Methods: 'Bank Transfer',
-                        'Bal Before': '₦18',
-                        'Bal After': '₦268',
+                        "Bal.B4": '₦18',
+                        'Bal.A': '₦268',
                         Amount: '₦250',
                         Source: '',
                         Status: 'Completed'
@@ -338,8 +304,8 @@
                         Time: '06-03-2024 7:56:10pm',
                         User: 'TIMOTHY OLUSHOLA IBITOYE',
                         Methods: 'Bank Transfer',
-                        'Bal Before': '₦412',
-                        'Bal After': '₦512',
+                        "Bal.B4": '₦412',
+                        'Bal.A': '₦512',
                         Amount: '₦100',
                         Source: '',
                         Status: 'Completed'
@@ -349,8 +315,8 @@
                         Time: '06-03-2024 7:54:44pm',
                         User: 'ODUNLADE OLUWASEUN OGUNRONBI',
                         Methods: 'Bank Transfer',
-                        'Bal Before': '₦8',
-                        'Bal After': '₦320',
+                        "Bal.B4": '₦8',
+                        'Bal.A': '₦320',
                         Amount: '₦312',
                         Source: '',
                         Status: 'Completed'
@@ -360,8 +326,8 @@
                         Time: '06-03-2024 7:50:40pm',
                         User: 'TIMOTHY OLUSHOLA IBITOYE',
                         Methods: 'Bank Transfer',
-                        'Bal Before': '₦92',
-                        'Bal After': '₦1,092',
+                        "Bal.B4": '₦92',
+                        'Bal.A': '₦1,092',
                         Amount: '₦1,000',
                         Source: '',
                         Status: 'Completed'
@@ -371,8 +337,8 @@
                         Time: '06-03-2024 6:45:50pm',
                         User: 'oluwafunto olusola aladesola',
                         Methods: 'Bank Transfer',
-                        'Bal Before': '₦14.04',
-                        'Bal After': '₦1,014.04',
+                        "Bal.B4": '₦14.04',
+                        'Bal.A': '₦1,014.04',
                         Amount: '₦1,000',
                         Source: '',
                         Status: 'Completed'
@@ -382,8 +348,8 @@
                         Time: '06-03-2024 6:26:59pm',
                         User: 'adekunle hammed yussuf',
                         Methods: 'Bank Transfer',
-                        'Bal Before': '₦110.4',
-                        'Bal After': '₦610.4',
+                        "Bal.B4": '₦110.4',
+                        'Bal.A': '₦610.4',
                         Amount: '₦500',
                         Source: '',
                         Status: 'Completed'
@@ -395,8 +361,8 @@
                         Time: '06-03-2024 7:58:14pm',
                         Receiver: '07061070861',
                         Network: 'MTN',
-                        'Bal Before': '60',
-                        'Bal After': '₦320',
+                        "Bal.B4": '60',
+                        'Bal.A': '₦320',
                         Amount: '₦133',
                         Status: 'Completed'
                     },
@@ -405,8 +371,8 @@
                         Time: '06-03-2024 7:56:40pm',
                         Receiver: '08068973680',
                         Network: 'MTN',
-                        'Bal Before': '51',
-                        'Bal After': '₦544',
+                        "Bal.B4": '51',
+                        'Bal.A': '₦544',
                         Amount: '₦260',
                         Status: 'Completed'
                     },
@@ -415,8 +381,8 @@
                         Time: '06-03-2024 7:52:09pm',
                         Receiver: '07086770200',
                         Network: 'Airtel',
-                        'Bal Before': '214',
-                        'Bal After': '₦832',
+                        "Bal.B4": '214',
+                        'Bal.A': '₦832',
                         Amount: '₦420',
                         Status: 'Completed'
                     },
@@ -425,8 +391,8 @@
                         Time: '06-03-2024 7:51:28pm',
                         Receiver: '07066909696',
                         Network: 'MTN',
-                        'Bal Before': '51',
-                        'Bal After': '₦1,092',
+                        "Bal.B4": '51',
+                        'Bal.A': '₦1,092',
                         Amount: '₦260',
                         Status: 'Completed'
                     },
@@ -435,8 +401,8 @@
                         Time: '06-03-2024 6:52:55pm',
                         Receiver: '07085439231',
                         Network: 'Airtel',
-                        'Bal Before': '213',
-                        'Bal After': '₦294.2',
+                        "Bal.B4": '213',
+                        'Bal.A': '₦294.2',
                         Amount: '₦210',
                         Status: 'Completed'
                     },
@@ -445,8 +411,8 @@
                         Time: '06-03-2024 6:47:08pm',
                         Receiver: '08066473134',
                         Network: 'MTN',
-                        'Bal Before': '51',
-                        'Bal After': '₦1,014.04',
+                        "Bal.B4": '51',
+                        'Bal.A': '₦1,014.04',
                         Amount: '₦260',
                         Status: 'Completed'
                     },
@@ -455,8 +421,8 @@
                         Time: '06-03-2024 6:41:50pm',
                         Receiver: '09119284762',
                         Network: 'Airtel',
-                        'Bal Before': '212',
-                        'Bal After': '₦135',
+                        "Bal.B4": '212',
+                        'Bal.A': '₦135',
                         Amount: '₦110',
                         Status: 'Completed'
                     },
@@ -465,8 +431,8 @@
                         Time: '06-03-2024 6:29:25pm',
                         Receiver: '08114048216',
                         Network: 'GLO',
-                        'Bal Before': '262',
-                        'Bal After': '₦610.4',
+                        "Bal.B4": '262',
+                        'Bal.A': '₦610.4',
                         Amount: '₦500',
                         Status: 'Completed'
                     },
@@ -475,8 +441,8 @@
                         Time: '06-03-2024 5:13:40pm',
                         Receiver: '09074053142',
                         Network: 'Airtel',
-                        'Bal Before': '213',
-                        'Bal After': '₦2,365',
+                        "Bal.B4": '213',
+                        'Bal.A': '₦2,365',
                         Amount: '₦210',
                         Status: 'Completed'
                     },
@@ -485,8 +451,8 @@
                         Time: '06-03-2024 5:11:58pm',
                         Receiver: '07037429694',
                         Network: 'MTN',
-                        'Bal Before': '50',
-                        'Bal After': '₦1,026',
+                        "Bal.B4": '50',
+                        'Bal.A': '₦1,026',
                         Amount: '₦520',
                         Status: 'Completed'
                     }
@@ -497,8 +463,8 @@
                         Time: '06-03-2024 8:7:34pm',
                         Receiver: '07013389805',
                         Network: 'Airtel',
-                        'Bal Before': '₦122.4',
-                        'Bal After': '₦4.8',
+                        "Bal.B4": '₦122.4',
+                        'Bal.A': '₦4.8',
                         Amount: '₦117.6',
                         Status: 'app'
                     },
@@ -507,8 +473,8 @@
                         Time: '06-03-2024 7:59:29pm',
                         Receiver: '07038898304',
                         Network: 'MTN',
-                        'Bal Before': '₦187',
-                        'Bal After': '₦3.74',
+                        "Bal.B4": '₦187',
+                        'Bal.A': '₦3.74',
                         Amount: '₦183.26',
                         Status: 'app'
                     },
@@ -517,8 +483,8 @@
                         Time: '06-03-2024 7:49:29pm',
                         Receiver: '08166438000',
                         Network: 'MTN',
-                        'Bal Before': '₦1,164.2',
-                        'Bal After': '₦1,066.2',
+                        "Bal.B4": '₦1,164.2',
+                        'Bal.A': '₦1,066.2',
                         Amount: '₦98',
                         Status: 'app'
                     },
@@ -527,8 +493,8 @@
                         Time: '06-03-2024 7:10:29pm',
                         Receiver: '09152382635',
                         Network: 'GLO',
-                        'Bal Before': '₦926.6',
-                        'Bal After': '₦828.6',
+                        "Bal.B4": '₦926.6',
+                        'Bal.A': '₦828.6',
                         Amount: '₦98',
                         Status: 'app'
                     },
@@ -537,8 +503,8 @@
                         Time: '06-03-2024 6:13:22pm',
                         Receiver: '07086612562',
                         Network: 'Airtel',
-                        'Bal Before': '₦88',
-                        'Bal After': '₦39',
+                        "Bal.B4": '₦88',
+                        'Bal.A': '₦39',
                         Amount: '₦49',
                         Status: 'app'
                     },
@@ -547,8 +513,8 @@
                         Time: '06-03-2024 6:12:30pm',
                         Receiver: '07086612562',
                         Network: 'MTN',
-                        'Bal Before': '₦88',
-                        'Bal After': '₦39',
+                        "Bal.B4": '₦88',
+                        'Bal.A': '₦39',
                         Amount: '₦49',
                         Status: 'app'
                     },
@@ -557,8 +523,8 @@
                         Time: '06-03-2024 4:59:12pm',
                         Receiver: '08077114043',
                         Network: 'GLO',
-                        'Bal Before': '₦8,685.14',
-                        'Bal After': '₦8,489.14',
+                        "Bal.B4": '₦8,685.14',
+                        'Bal.A': '₦8,489.14',
                         Amount: '₦196',
                         Status: 'app'
                     },
@@ -567,8 +533,8 @@
                         Time: '06-03-2024 3:59:7pm',
                         Receiver: '07082573143',
                         Network: 'Airtel',
-                        'Bal Before': '₦1,336',
-                        'Bal After': '₦846',
+                        "Bal.B4": '₦1,336',
+                        'Bal.A': '₦846',
                         Amount: '₦490',
                         Status: 'app'
                     },
@@ -577,8 +543,8 @@
                         Time: '06-03-2024 3:45:48pm',
                         Receiver: '07051605267',
                         Network: 'GLO',
-                        'Bal Before': '₦623',
-                        'Bal After': '₦35',
+                        "Bal.B4": '₦623',
+                        'Bal.A': '₦35',
                         Amount: '₦588',
                         Status: 'app'
                     },
@@ -587,10 +553,171 @@
                         Time: '06-03-2024 3:26:7pm',
                         Receiver: '09050268289',
                         Network: 'GLO',
-                        'Bal Before': '₦424.06',
-                        'Bal After': '₦326.06',
+                        "Bal.B4": '₦424.06',
+                        'Bal.A': '₦326.06',
                         Amount: '₦98',
                         Status: 'app'
+                    }
+                ],
+                'Airtime 2 cash': [{
+                        TransactionID: '2024030602337ref',
+                        Time: '05-03-2024 2:38:57pm',
+                        Sender: '07034563210',
+                        Receiver: '08069482612',
+                        "Bal.B4": '₦0',
+                        'Bal.A': '₦1,600',
+                        Amount: '₦2,000',
+                        Status: 'Settled'
+                    },
+                    {
+                        TransactionID: '20240306002017ref',
+                        Time: '05-03-2024 3:20:17pm',
+                        Sender: '07034563210',
+                        Receiver: '08069482612',
+                        "Bal.B4": '₦0',
+                        'Bal.A': '₦0',
+                        Amount: '₦2,000',
+                        Status: 'Under Review'
+                    },
+                    {
+                        TransactionID: '20240306001935ref',
+                        Time: '05-03-2024 3:19:35pm',
+                        Sender: '07034563210',
+                        Receiver: '08069482612',
+                        "Bal.B4": '₦0',
+                        'Bal.A': '₦0',
+                        Amount: '₦2,000',
+                        Status: 'Under Review'
+                    },
+                    {
+                        TransactionID: '20240304155937ref',
+                        Time: '04-03-2024 6:59:37am',
+                        Sender: '07034563210',
+                        Receiver: '08108082141',
+                        "Bal.B4": '₦96',
+                        'Bal.A': '₦96',
+                        Amount: '₦2,500',
+                        Status: 'Under Review'
+                    },
+                    {
+                        TransactionID: '20240304155925ref',
+                        Time: '04-03-2024 6:59:25am',
+                        Sender: '07034563210',
+                        Receiver: '08108082141',
+                        "Bal.B4": '₦96',
+                        'Bal.A': '₦96',
+                        Amount: '₦2,500',
+                        Status: 'Under Review'
+                    },
+                    {
+                        TransactionID: '20240304081444ref',
+                        Time: '03-03-2024 11:14:44pm',
+                        Sender: '07034563210',
+                        Receiver: '09168135058',
+                        "Bal.B4": '₦0',
+                        'Bal.A': '₦0',
+                        Amount: '₦500',
+                        Status: 'Under Review'
+                    }
+                ],
+                'cable & Tv': [{
+                        TransactionID: '20240305175814ref1',
+                        Time: '05-03-2024 8:58:17am',
+                        Receiver: '02764528699',
+                        DISCO: 'StarTimes Subscription',
+                        "Bal.B4": '₦4,192',
+                        'Bal.A': '₦3,162',
+                        Amount: '₦1,030',
+                        Sources: 'app',
+                        Status: 'Completed'
+                    },
+                    {
+                        TransactionID: '20240305095010ref1',
+                        Time: '05-03-2024 12:50:26am',
+                        Receiver: '8061002458',
+                        DISCO: 'DSTV Subscription',
+                        "Bal.B4": '₦5,278.22',
+                        'Bal.A': '₦2,298.22',
+                        Amount: '₦2,980',
+                        Sources: 'app',
+                        Status: 'Completed'
+                    },
+                    {
+                        TransactionID: '20240304193716ref1',
+                        Time: '04-03-2024 10:37:19am',
+                        Receiver: '018320487160',
+                        DISCO: 'StarTimes Subscription',
+                        "Bal.B4": '₦3,662',
+                        'Bal.A': '₦662',
+                        Amount: '₦3,000',
+                        Sources: 'app',
+                        Status: 'Completed'
+                    },
+                    {
+                        TransactionID: '20240304155906ref5',
+                        Time: '04-03-2024 6:59:40am',
+                        Receiver: '8071309044',
+                        DISCO: 'GoTv',
+                        "Bal.B4": '₦90,842.63',
+                        'Bal.A': '₦88,112.63',
+                        Amount: '₦2,730',
+                        Sources: 'app',
+                        Status: 'Completed'
+                    },
+                    {
+                        TransactionID: '20240303212935ref0',
+                        Time: '03-03-2024 12:29:48pm',
+                        Receiver: '8212277764',
+                        DISCO: 'DSTV Subscription',
+                        "Bal.B4": '₦94,621.63',
+                        'Bal.A': '₦91,641.63',
+                        Amount: '₦2,980',
+                        Sources: 'app',
+                        Status: 'Completed'
+                    },
+                    {
+                        TransactionID: '20240303183014ref0',
+                        Time: '03-03-2024 9:30:20am',
+                        Receiver: '02724975879',
+                        DISCO: 'StarTimes Subscription',
+                        "Bal.B4": '₦5,289.8',
+                        'Bal.A': '₦1,489.8',
+                        Amount: '₦3,800',
+                        Sources: 'app',
+                        Status: 'Completed'
+                    },
+                    {
+                        TransactionID: '20240303180141ref2',
+                        Time: '03-03-2024 9:1:57am',
+                        Receiver: '8216550156',
+                        DISCO: 'GoTv',
+                        "Bal.B4": '₦3,338',
+                        'Bal.A': '₦638',
+                        Amount: '₦2,700',
+                        Sources: 'app',
+                        Status: 'Completed'
+                    },
+                    {
+                        TransactionID: '20240302204511ref1',
+                        Time: '02-03-2024 11:45:23am',
+                        Receiver: '8072164605',
+                        DISCO: 'GoTv',
+                        "Bal.B4": '₦8,978',
+                        'Bal.A': '₦4,998',
+                        Amount: '₦3,980',
+                        Sources: 'app',
+                        Status: 'Completed'
+                    },
+                    {
+                        TransactionID: '20240302155709ref7',
+                        Time: '02-03-2024 6:57:11am',
+                        Receiver: '01831682289',
+                        DISCO: 'StarTimes Subscription',
+                        "Bal.B4": '₦5,561',
+                        'Bal.A': '₦2,531',
+                        Amount: '₦3,030',
+                        Sources: 'app',
+                        Status: 'Completed'
                     }
                 ]
             };
@@ -615,8 +742,7 @@
                 let row = tableBody.insertRow();
                 headers[action].forEach(header => {
                     let cell = row.insertCell();
-                    cell.textContent = record[header] || record[header.replace(/ /g, '')] ||
-                        '';
+                    cell.textContent = record[header];
                 });
             });
 

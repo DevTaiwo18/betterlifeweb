@@ -193,10 +193,11 @@
             width: 80%;
             right: 13px;
             border-radius: 10px;
-            padding: 30px 10px;
+            padding: 30px 20px;
             position: absolute;
             margin-top: 100px;
         }
+
 
         /* flex-div */
 
@@ -285,8 +286,6 @@
 
         .acc-table {
             margin-top: 30px;
-            overflow-x: auto;
-            width: 100%;
         }
 
         .acc-table tr th {
@@ -338,7 +337,7 @@
             border: 1px solid rgb(10, 26, 168);
         }
 
-        .transaction ul li a{
+        .transaction ul li a {
             font-size: 13px;
             font-weight: 500;
             color: #222222
@@ -423,6 +422,210 @@
             background-color: transparent
         }
 
+        .tab {
+            padding-top: 30px;
+        }
+
+        #planForm {
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+        }
+
+        #planform h2 {
+            font-size: 19px;
+            font-weight: 800;
+            color: #000000;
+            line-height: 28px;
+            font-style: normal;
+            font-family: "Quicksand", sans-serif;
+            padding-bottom: 20px
+        }
+
+        #planform .save {
+            background-color: rgb(10, 26, 168);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 24px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "Quicksand", sans-serif;
+            border: 1px solid rgb(10, 26, 168);
+        }
+
+        #contentContainer {
+            margin-top: 30px;
+        }
+
+        #contentContainer tr th {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 800;
+            color: #000000;
+            line-height: 17px;
+            font-style: normal;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .blu {
+            background-color: rgb(10, 26, 168);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: "Quicksand", sans-serif;
+            border: 1px solid rgb(10, 26, 168);
+        }
+
+        #contentContainer tr td {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 800;
+            Color: #464855;
+            line-height: 19px;
+            font-style: normal;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .addPlan {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+
+        #myModal {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.434);
+            padding-top: 60px;
+        }
+
+        #myCustomModal {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.434);
+            padding-top: 110px;
+        }
+
+        #myEditModal {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.434);
+            padding-top: 60px;
+        }
+
+        #myEditCustomModal {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.434);
+            padding-top: 110px;
+        }
+
+        .modal-content {
+            margin: 0% auto;
+            width: 60%;
+        }
+
+        .Emodal-content {
+            margin: 0% auto;
+            width: 60%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .table {
+            margin-top: 30px;
+        }
+
+        .table tr td {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 800;
+            Color: #464855;
+            line-height: 19px;
+            font-style: normal;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .table tr th {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 800;
+            Color: #000000;
+            line-height: 19px;
+            font-style: normal;
+            font-family: "Quicksand", sans-serif;
+        }
+
+
+
+        @media(max-width:1024px) {
+            #planForm {
+                width: 80%;
+            }
+
+            #myModal {
+                display: none;
+                padding-top: 30px;
+            }
+
+            #myEditModal {
+                display: none;
+                padding-top: 30px;
+            }
+
+            .modal-content {
+                margin: auto;
+                width: 70%;
+            }
+
+            .Emodal-content {
+                margin: auto;
+                width: 70%;
+            }
+
+        }
 
         @media (max-width:1000px) {
 
@@ -467,11 +670,47 @@
             .date {
                 width: 100%;
             }
+
+            #contentContainer tr th {
+                text-align: center;
+                font-size: 8px;
+            }
+
+            #contentContainer tr td {
+                text-align: center;
+                font-size: 8px;
+            }
+
+            #contentContainer tr td .btn {
+                text-align: center;
+                font-size: 8px;
+            }
+
+            .modal-content {
+                margin: auto;
+                width: 60%;
+            }
+
+            .Emodal-content {
+                margin: auto;
+                width: 60%;
+            }
+
+            #myModal {
+                display: none;
+                padding-top: 30px;
+            }
+
+            #myEditModal {
+                display: none;
+                padding-top: 30px;
+            }
+
         }
 
         @media (max-width:768px) {
             .con {
-                margin-top: 90px;
+                margin-top: 120px;
                 padding: 20px 10px;
             }
 
@@ -485,9 +724,36 @@
                 background-color: rgb(10, 26, 168);
                 width: 30%;
             }
-        }
 
-        @media (max-width: 767px) {
+            .blu {
+                font-size: 10px;
+            }
+
+            .modal-content {
+                margin: auto;
+                width: 90%;
+            }
+
+            .Emodal-content {
+                margin: auto;
+                width: 90%;
+            }
+
+            #myModal {
+                display: none;
+                padding-top: 30px;
+            }
+
+            #myEditModal {
+                display: none;
+                padding-top: 30px;
+            }
+
+            .table {
+                width: 100%;
+                overflow-x: scroll !important;
+            }
+
 
             header .header-div h2 {
                 display: none;
@@ -526,7 +792,18 @@
                 width: 100% !important;
                 right: 0;
                 border-radius: 0%;
-                margin-top: 2px;
+                margin-top: 70px;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .con {
+                width: 100% !important;
+                right: 0;
+                border-radius: 0%;
+                margin-top: 2px !important;
+                padding: 10px;
             }
 
             .flex {
@@ -559,21 +836,79 @@
             }
 
             .transaction h1 {
-                font-size: 17px;
+                font-size: 12px;
+                padding-top: 10px;
             }
 
             .transaction .drop {
                 padding: 10px 10px;
             }
 
+            .acc-table tr {
+                padding: 0;
+            }
+
             .acc-table tr th {
-                font-size:7px;
+                font-size: 8px;
                 word-spacing: 2px;
             }
 
             .acc-table tr td {
-                font-size:7px;
+                font-size: 8px;
                 word-spacing: 2px;
+                letter-spacing: 0
+            }
+
+            #planForm {
+                width: 95%;
+            }
+
+            .tab {
+                padding-top: 5px;
+            }
+
+            #planform h2 {
+                font-size: 15px;
+                padding-bottom: 0px
+            }
+
+            #contentContainer {
+                width: 100%;
+                overflow-x: auto !important;
+            }
+
+            #contentContainer tr th {
+                text-align: center;
+                font-size: 8px;
+            }
+
+            #contentContainer tr td {
+                text-align: center;
+                font-size: 8px;
+            }
+
+            .dropdown #dropdownMenuButton1 {
+                padding: 10px;
+                font-size: 10px
+            }
+
+            .table tr td {
+                font-size: 10px;
+            }
+
+            .table tr th {
+                font-size: 10px;
+            }
+
+            .Husmo {
+                font-size: 8px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            nav ul li .b span {
+                font-size: 10px !important;
+                color: rgb(175, 176, 181);
             }
         }
     </style>
@@ -619,11 +954,98 @@
                         <i class="bi bi-chevron-right arrow-right"></i>
                     </li>
                 </a>
+
+                <a href="{{ url('tv') }}">
+                    <li>
+                        <div class="b">
+                            <div class=" custom-radius">
+                                <i class="bi bi-list"></i>
+                            </div>
+                            <span>Tv settings</span>
+                        </div>
+                        <i class="bi bi-chevron-right arrow-right"></i>
+                    </li>
+                </a>
+
+                <a href="{{ url('Hanmodata') }}">
+                    <li>
+                        <div class="b">
+                            <div class=" custom-radius">
+                                <i class="bi-solid bi-gear"></i>
+                            </div>
+                            <span>Husmodata Plan</span>
+                        </div>
+                        <i class="bi bi-chevron-right arrow-right"></i>
+                    </li>
+                </a>
+
+                <a href="{{ url('Admin') }}">
+                    <li>
+                        <div class="b">
+                            <div class=" custom-radius">
+                                <i class="bi-solid bi-gear"></i>
+                            </div>
+                            <span>Admin Settings</span>
+                        </div>
+                        <i class="bi bi-chevron-right arrow-right"></i>
+                    </li>
+                </a>
+
+                <a href="{{ url('ApiSetting') }}">
+                    <li>
+                        <div class="b">
+                            <div class=" custom-radius">
+                                <i class="bi-solid bi-gear"></i>
+                            </div>
+                            <span>Api Settings</span>
+                        </div>
+                        <i class="bi bi-chevron-right arrow-right"></i>
+                    </li>
+                </a>
+
+                <a href="{{ url('Reverse') }}">
+                    <li>
+                        <div class="b">
+                            <div class=" custom-radius">
+                                <i class="bi-solid bi-gear"></i>
+                            </div>
+                            <span>Reverse Transaction</span>
+                        </div>
+                        <i class="bi bi-chevron-right arrow-right"></i>
+                    </li>
+                </a>
+
+                <a href="{{ url('RestPassword') }}">
+                    <li>
+                        <div class="b">
+                            <div class=" custom-radius">
+                                <i class="bi-solid bi-gear"></i>
+                            </div>
+                            <span>Rest Password</span>
+                        </div>
+                        <i class="bi bi-chevron-right arrow-right"></i>
+                    </li>
+                </a>
+
+                <a href="{{ url('BroadCast') }}">
+                    <li>
+                        <div class="b">
+                            <div class=" custom-radius">
+                                <i class="bi-solid bi-gear"></i>
+                            </div>
+                            <span>Broadcast</span>
+                        </div>
+                        <i class="bi bi-chevron-right arrow-right"></i>
+                    </li>
+                </a>
+
             </ul>
         </nav>
 
         @yield('section')
     </div>
+
+
 
 </body>
 <!-- boostarp -->
@@ -637,7 +1059,6 @@
         let nav = document.getElementById("mainNav");
         nav.classList.toggle("show");
     }
-    
 </script>
 
 </html>
