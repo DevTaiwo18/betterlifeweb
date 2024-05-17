@@ -152,15 +152,17 @@
 
         nav ul a li .arrow-right {
             font-size: 10px;
-            color: rgb(175, 176, 181);
+            color: #000000 !important;
         }
 
         nav ul a li:hover {
-            background-color: #e9ecef;
+            background-color: #91929284;
             cursor: pointer;
         }
 
-
+        nav ul a li.active {
+            background-color: #91929284;
+        }
 
         nav ul li .b {
             display: flex;
@@ -172,7 +174,7 @@
 
         nav ul li .b span {
             font-size: 12px;
-            color: rgb(175, 176, 181);
+            color: #000000;
         }
 
         .custom-radius {
@@ -973,7 +975,7 @@
                             <div class=" custom-radius">
                                 <i class="bi-solid bi-gear"></i>
                             </div>
-                            <span>Husmodata Plan</span>
+                            <span>Data Plans</span>
                         </div>
                         <i class="bi bi-chevron-right arrow-right"></i>
                     </li>
@@ -1071,6 +1073,17 @@
         let nav = document.getElementById("mainNav");
         nav.classList.toggle("show");
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const navItems = document.querySelectorAll('nav ul a li');
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navItems.forEach(navItem => navItem.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+    });
 </script>
 
 </html>

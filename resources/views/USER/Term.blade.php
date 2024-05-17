@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- title -->
-    <title>Better Life |Tranfer Transaction</title>
+    <title>Better Life |Term $ Condition</title>
     <!-- title -->
 
     <!-- css -->
@@ -342,6 +342,32 @@
         padding: 20px 0 10px 0;
     }
 
+    .container-1 {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .content h1,
+    h2,
+    h3 {
+        margin-bottom: 20px;
+        color: #595959;
+        font-size: 25px;
+    }
+
+    .content label {
+        color: #7d7d7d;
+    }
+
+
     /* media query */
 
     @media(max-width: 1042px) {
@@ -492,6 +518,33 @@
             font-size: 14px;
         }
 
+        .container-1 {
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+
+        .content {
+            flex-direction: column;
+            background: white;
+            padding: 20px;
+        }
+
+        .content h1,
+        h2,
+        h3 {
+            margin-bottom: 10px;
+            color: #595959;
+            font-size: 22px;
+        }
+
+        .content label {
+            color: #7d7d7d;
+            font-size: 14px;
+        }
+
     }
 
     @media (max-width: 320px) {
@@ -552,215 +605,69 @@
 
             </div>
         </header>
-        <div class="landing">
-            <main>
-                <div class="overlay pl-4 pl-sm-16">
-                    <div class="roww text-white">
-                        <div class="coll">
-                            <p class="welcome">Welcome to BetterLife</p>
-                            <h1 class="weprovide">We provide reliable and quality</h1>
-                            <p class="weprovided">We provide fast and convenient services for recharging
-                                airtime, purchasing data bundles, subscribing to cable TV
-                                (DSTV, GOTV, and STARTIMES), paying electricity bills,
-                                and converting airtime to cash.</p>
-                            <div class="btnns">
-                                <a class="a" href="{{ url('/user/Signin') }}">
-                                    <v-btn class="subtn mr-8">SIGN IN</v-btn>
-                                </a>
-
-                                <a class="a" href="{{ url('/user/Signup') }}">
-                                    <v-btn class="siubtn">SIGN UP</v-btn>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="coll happy-girl-container">
-                            <div class="happy-girl"></div>
-                        </div>
-                    </div>
-                </div>
-        </div>
     </div>
 
-    <section class="service-con">
-        <div>
-            <div class="text-center py-5 fs-4">
-                <h1 class="text-h4">Services</h1>
-            </div>
-            <div class="services">
-                <div class="service-card">
-                    <card class="text-center theCard card">
-                        <img src="/image/img/service/service1.png" alt="">
-                        <h3 class="my-2">Airtime and Data</h3>
-                        <p>Stay Connected and Productive with
-                            Affordable Airtime and Data Plans. Browse,
-                            stream and work seamlessly with our
-                            high-quality data. Get the data you need
-                            today and stay connected to what matters most.</p>
-                    </card>
-                    <card class="text-center  theCard card">
-                        <img src="/image/img/service/service2.png" alt="">
-                        <h3 class="my-2">Airtime to Cash</h3>
-                        <p>Stay Connected and Productive with
-                            Affordable Airtime and Data Plans. Browse,
-                            stream and work seamlessly with our
-                            high-quality data. Get the data you need
-                            today and stay connected to what matters most.</p>
-                    </card>
-                </div>
-                <div class="service-card">
-                    <card class="text-center  theCard card">
-                        <img src="/image/img/service/service3.png" alt="">
-                        <h3 class="my-2">Transfer</h3>
-                        <p>Stay Connected and Productive with
-                            Affordable Airtime and Data Plans. Browse,
-                            stream and work seamlessly with our
-                            high-quality data. Get the data you need
-                            today and stay connected to what matters most.</p>
-                    </card>
-                    <card class="text-center  theCard card">
-                        <img src="/image/img/service/service4.png" alt="">
-                        <h3 class="my-2">Bill Payment</h3>
-                        <p>Stay Connected and Productive with
-                            Affordable Airtime and Data Plans. Browse,
-                            stream and work seamlessly with our
-                            high-quality data. Get the data you need
-                            today and stay connected to what matters most.</p>
-                    </card>
-                </div>
-            </div>
-            <div class="alone">
-                <div class="service-card">
-                    <card class="text-center  theCard card">
-                        <img src="/image/img/service/service5.png" alt="">
-                        <h3 class="my-2">Loan</h3>
-                        <p>Stay Connected and Productive with
-                            Affordable Airtime and Data Plans. Browse,
-                            stream and work seamlessly with our
-                            high-quality data. Get the data you need
-                            today and stay connected to what matters most.</p>
-                    </card>
-                </div>
-            </div>
+    <div class="container-1">
+        <div class="content">
+            <h1>Terms & Conditions</h1>
+            <p>
+                By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages or make derivative versions. The app itself, and all the trademarks, copyright, database rights, and other intellectual property rights related to it, still belong to Betterlife Digital Services Limited.
+            </p>
+    
+            <p>
+                Betterlife Digital Services Limited is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.
+            </p>
+    
+            <p>
+                The Betterlife app stores and processes personal data that you have provided to us, to provide our Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Betterlife app won’t work properly or at all.
+            </p>
+    
+            <p>
+                The app does use third-party services that declare their Terms and Conditions.
+            </p>
+            <p>
+                Link to Terms and Conditions of third-party service providers used by the app:
+                <ul>
+                    <li>Google Play Services</li>
+                </ul>
+            </p>
+    
+            <p>
+                You should be aware that there are certain things that Betterlife Digital Services Limited will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi or provided by your mobile network provider, but Betterlife Digital Services Limited cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.
+            </p>
+    
+            <p>
+                If you’re using the app outside of an area with Wi-Fi, you should remember that the terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third-party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.
+            </p>
+    
+            <p>
+                Along the same lines, Betterlife Digital Services Limited cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the Service, Betterlife Digital Services Limited cannot accept responsibility.
+            </p>
+    
+            <p>
+                With respect to Betterlife Digital Services Limited’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavor to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Betterlife Digital Services Limited accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
+            </p>
+    
+            <p>
+                At some point, we may wish to update the app. The app is currently available on Android & iOS – the requirements for both systems (and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Betterlife Digital Services Limited does not promise that it will always update the app so that it is relevant to you and/or works with the Android & iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you. We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.
+            </p>
+    
+            <h2>Changes to This Terms and Conditions</h2>
+            <p>
+                We may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Terms and Conditions on this page. These terms and conditions are effective as of 2022-09-29.
+            </p>
+    
+            <p>
+                These terms and conditions are effective as of 2022-08-14.
+            </p>
+    
+            <h2>Contact Us</h2>
+            <p>
+                If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at info@betterlifeglobal.com.ng or +234 703 456 3210.
+            </p>
         </div>
-    </section>
-
-    <section class="about-us"
-        style="background-image: linear-gradient(90deg, #0052B8 3.11%, rgba(184, 0, 144, 0.5), rgba(184, 0, 144, 0.1));">
-        <div class="container p-0">
-            <div class="text-center text-white p-4">
-                <h1 class="text-h4 fs-2">About Us</h1>
-            </div>
-            <div class="row justify-content-between py-5 pt-0 py-sm-10">
-                <div class="col-12 col-md-6">
-                    <div class="about-lay">
-                        <p class="text-white">Experience Faster and More Convenient Telecommunications Services with Us.
-                            We offer a range of transmission services, including data transmission, cable subscription,
-                            bill payments, airtime top-ups, and more. Our services are designed for optimal convenience
-                            and customer satisfaction. Plus, we offer zero capital business solutions to help
-                            entrepreneurs and students start their own telecommunications business. Join us today and
-                            enjoy the benefits of modern telecommunications!</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 d-none d-sm-block">
-                    <img class="about-img" src='/image/img/about-us-image.png' alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container pb-5">
-            <div class="text-center py-5">
-                <h1 class="h5">Frequently asked questions</h1>
-            </div>
-            <div class="px-2 px-sm-16">
-                <div class="accordion" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne" data-bs-parent="#accordionFlushExample">
-                                How to buy data?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                aliquam tincidunt arcu, nec viverra odio ullamcorper in. Donec id justo enim.
-                                Pellentesque ultrices ligula sed odio ultrices, et consectetur nulla volutpat. Sed vel
-                                felis pretium, consequat quam in, bibendum nulla.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo" data-bs-parent="#accordionFlushExample">
-                                What are the codes for checking data balance?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                aliquam tincidunt arcu, nec viverra odio ullamcorper in. Donec id justo enim.
-                                Pellentesque ultrices ligula sed odio ultrices, et consectetur nulla volutpat. Sed vel
-                                felis pretium, consequat quam in, bibendum nulla.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree" data-bs-parent="#accordionFlushExample">
-                                How do i fund my wallet?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                aliquam tincidunt arcu, nec viverra odio ullamcorper in. Donec id justo enim.
-                                Pellentesque ultrices ligula sed odio ultrices, et consectetur nulla volutpat. Sed vel
-                                felis pretium, consequat quam in, bibendum nulla.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                aria-controls="flush-collapseFour" data-bs-parent="#accordionFlushExample">
-                                How to use our service?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                aliquam tincidunt arcu, nec viverra odio ullamcorper in. Donec id justo enim.
-                                Pellentesque ultrices ligula sed odio ultrices, et consectetur nulla volutpat. Sed vel
-                                felis pretium, consequat quam in, bibendum nulla.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="contact-us">
-        <div class="container pb-5">
-            <div class="text-center py-5">
-                <h1 class="h5">Contact Us</h1>
-            </div>
-            <div class="row align-items-center justify-content-center contactImg">
-                <div class="col-12 col-md-6 text-center">
-                    <img src="/image/img/contact-left.png" alt="">
-                </div>
-                <div class="col-12 col-md-6 text-center">
-                    <img src="/image/img/contact-right.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+    
 
     <footer class="text-white py-8">
         <div class="container-fluid p-5 footerdiv">
@@ -807,7 +714,6 @@
                                     <li class="my-3 text-subtitle-2" style="font-size: 14px; font-weight:500;">Term $
                                         Condition</li>
                                 </a>
-
                             </ul>
                         </div>
                         <div class="col-6">

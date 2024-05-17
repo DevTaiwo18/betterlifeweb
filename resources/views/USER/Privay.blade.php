@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- title -->
-    <title>Better Life |Tranfer Transaction</title>
+    <title>Better Life |Privacy Policy</title>
     <!-- title -->
 
     <!-- css -->
@@ -342,6 +342,32 @@
         padding: 20px 0 10px 0;
     }
 
+    .container-1 {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .content h1,
+    h2,
+    h3 {
+        margin-bottom: 20px;
+        color: #595959;
+        font-size: 25px;
+    }
+
+    .content label {
+        color: #7d7d7d;
+    }
+
+
     /* media query */
 
     @media(max-width: 1042px) {
@@ -492,6 +518,33 @@
             font-size: 14px;
         }
 
+        .container-1 {
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+
+        .content {
+            flex-direction: column;
+            background: white;
+            padding: 20px;
+        }
+
+        .content h1,
+        h2,
+        h3 {
+            margin-bottom: 10px;
+            color: #595959;
+            font-size: 22px;
+        }
+
+        .content label {
+            color: #7d7d7d;
+            font-size: 14px;
+        }
+
     }
 
     @media (max-width: 320px) {
@@ -552,215 +605,177 @@
 
             </div>
         </header>
-        <div class="landing">
-            <main>
-                <div class="overlay pl-4 pl-sm-16">
-                    <div class="roww text-white">
-                        <div class="coll">
-                            <p class="welcome">Welcome to BetterLife</p>
-                            <h1 class="weprovide">We provide reliable and quality</h1>
-                            <p class="weprovided">We provide fast and convenient services for recharging
-                                airtime, purchasing data bundles, subscribing to cable TV
-                                (DSTV, GOTV, and STARTIMES), paying electricity bills,
-                                and converting airtime to cash.</p>
-                            <div class="btnns">
-                                <a class="a" href="{{ url('/user/Signin') }}">
-                                    <v-btn class="subtn mr-8">SIGN IN</v-btn>
-                                </a>
-
-                                <a class="a" href="{{ url('/user/Signup') }}">
-                                    <v-btn class="siubtn">SIGN UP</v-btn>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="coll happy-girl-container">
-                            <div class="happy-girl"></div>
-                        </div>
-                    </div>
-                </div>
-        </div>
     </div>
 
-    <section class="service-con">
-        <div>
-            <div class="text-center py-5 fs-4">
-                <h1 class="text-h4">Services</h1>
-            </div>
-            <div class="services">
-                <div class="service-card">
-                    <card class="text-center theCard card">
-                        <img src="/image/img/service/service1.png" alt="">
-                        <h3 class="my-2">Airtime and Data</h3>
-                        <p>Stay Connected and Productive with
-                            Affordable Airtime and Data Plans. Browse,
-                            stream and work seamlessly with our
-                            high-quality data. Get the data you need
-                            today and stay connected to what matters most.</p>
-                    </card>
-                    <card class="text-center  theCard card">
-                        <img src="/image/img/service/service2.png" alt="">
-                        <h3 class="my-2">Airtime to Cash</h3>
-                        <p>Stay Connected and Productive with
-                            Affordable Airtime and Data Plans. Browse,
-                            stream and work seamlessly with our
-                            high-quality data. Get the data you need
-                            today and stay connected to what matters most.</p>
-                    </card>
-                </div>
-                <div class="service-card">
-                    <card class="text-center  theCard card">
-                        <img src="/image/img/service/service3.png" alt="">
-                        <h3 class="my-2">Transfer</h3>
-                        <p>Stay Connected and Productive with
-                            Affordable Airtime and Data Plans. Browse,
-                            stream and work seamlessly with our
-                            high-quality data. Get the data you need
-                            today and stay connected to what matters most.</p>
-                    </card>
-                    <card class="text-center  theCard card">
-                        <img src="/image/img/service/service4.png" alt="">
-                        <h3 class="my-2">Bill Payment</h3>
-                        <p>Stay Connected and Productive with
-                            Affordable Airtime and Data Plans. Browse,
-                            stream and work seamlessly with our
-                            high-quality data. Get the data you need
-                            today and stay connected to what matters most.</p>
-                    </card>
-                </div>
-            </div>
-            <div class="alone">
-                <div class="service-card">
-                    <card class="text-center  theCard card">
-                        <img src="/image/img/service/service5.png" alt="">
-                        <h3 class="my-2">Loan</h3>
-                        <p>Stay Connected and Productive with
-                            Affordable Airtime and Data Plans. Browse,
-                            stream and work seamlessly with our
-                            high-quality data. Get the data you need
-                            today and stay connected to what matters most.</p>
-                    </card>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container-1">
+        <div class="content">
+            <h1>Privacy Policy</h1>
+            <p>
+                Your privacy is important to us. It is Better Life's policy to respect your privacy and comply with any
+                applicable law and regulation regarding any personal information we may collect about you, including
+                across our website, https://betterlife.com, and other sites we own and operate.
+            </p>
 
-    <section class="about-us"
-        style="background-image: linear-gradient(90deg, #0052B8 3.11%, rgba(184, 0, 144, 0.5), rgba(184, 0, 144, 0.1));">
-        <div class="container p-0">
-            <div class="text-center text-white p-4">
-                <h1 class="text-h4 fs-2">About Us</h1>
-            </div>
-            <div class="row justify-content-between py-5 pt-0 py-sm-10">
-                <div class="col-12 col-md-6">
-                    <div class="about-lay">
-                        <p class="text-white">Experience Faster and More Convenient Telecommunications Services with Us.
-                            We offer a range of transmission services, including data transmission, cable subscription,
-                            bill payments, airtime top-ups, and more. Our services are designed for optimal convenience
-                            and customer satisfaction. Plus, we offer zero capital business solutions to help
-                            entrepreneurs and students start their own telecommunications business. Join us today and
-                            enjoy the benefits of modern telecommunications!</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 d-none d-sm-block">
-                    <img class="about-img" src='/image/img/about-us-image.png' alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+            <p>This policy is effective as of 1 January 2023 and was last updated on 1 January 2023.</p>
 
-    <section>
-        <div class="container pb-5">
-            <div class="text-center py-5">
-                <h1 class="h5">Frequently asked questions</h1>
-            </div>
-            <div class="px-2 px-sm-16">
-                <div class="accordion" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne" data-bs-parent="#accordionFlushExample">
-                                How to buy data?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                aliquam tincidunt arcu, nec viverra odio ullamcorper in. Donec id justo enim.
-                                Pellentesque ultrices ligula sed odio ultrices, et consectetur nulla volutpat. Sed vel
-                                felis pretium, consequat quam in, bibendum nulla.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo" data-bs-parent="#accordionFlushExample">
-                                What are the codes for checking data balance?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                aliquam tincidunt arcu, nec viverra odio ullamcorper in. Donec id justo enim.
-                                Pellentesque ultrices ligula sed odio ultrices, et consectetur nulla volutpat. Sed vel
-                                felis pretium, consequat quam in, bibendum nulla.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree" data-bs-parent="#accordionFlushExample">
-                                How do i fund my wallet?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                aliquam tincidunt arcu, nec viverra odio ullamcorper in. Donec id justo enim.
-                                Pellentesque ultrices ligula sed odio ultrices, et consectetur nulla volutpat. Sed vel
-                                felis pretium, consequat quam in, bibendum nulla.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                aria-controls="flush-collapseFour" data-bs-parent="#accordionFlushExample">
-                                How to use our service?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                aliquam tincidunt arcu, nec viverra odio ullamcorper in. Donec id justo enim.
-                                Pellentesque ultrices ligula sed odio ultrices, et consectetur nulla volutpat. Sed vel
-                                felis pretium, consequat quam in, bibendum nulla.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h2>Information We Collect</h2>
+            <p>Information we collect includes both information you knowingly and actively provide us when using or
+                participating in any of our services and promotions, and any information automatically sent by your
+                devices in the course of accessing our products and services.</p>
 
+            <h3>Log Data</h3>
+            <p>When you visit our website, our servers may automatically log the standard data provided by your web
+                browser. It may include your device’s Internet Protocol (IP) address, your browser type and version, the
+                pages you visit, the time and date of your visit, the time spent on each page, other details about your
+                visit, and technical details that occur in conjunction with any errors you may encounter.</p>
 
-    <section class="contact-us">
-        <div class="container pb-5">
-            <div class="text-center py-5">
-                <h1 class="h5">Contact Us</h1>
-            </div>
-            <div class="row align-items-center justify-content-center contactImg">
-                <div class="col-12 col-md-6 text-center">
-                    <img src="/image/img/contact-left.png" alt="">
-                </div>
-                <div class="col-12 col-md-6 text-center">
-                    <img src="/image/img/contact-right.png" alt="">
-                </div>
-            </div>
+            <p>Please be aware that while this information may not be personally identifying by itself, it may be
+                possible to combine it with other data to personally identify individual persons.</p>
+
+            <h3>Personal Information</h3>
+            <p>We may ask for personal information which may include one or more of the following:</p>
+
+            <ul>
+                <li>Name</li>
+                <li>Email</li>
+                <li>Social media profiles</li>
+                <li>Date of birth</li>
+                <li>Phone/mobile number</li>
+                <li>Home/mailing address</li>
+            </ul>
+
+            <h2>Legitimate Reasons for Processing Your Personal Information</h2>
+            <p>We only collect and use your personal information when we have a legitimate reason for doing so. In which
+                instance, we only collect personal information that is reasonably necessary to provide our services to
+                you.</p>
+
+            <h2>Collection and Use of Information</h2>
+            <p>We may collect personal information from you when you do any of the following on our website:</p>
+
+            <ul>
+                <li>Register for an account</li>
+                <li>Sign up to receive updates from us via email or social media channels</li>
+                <li>Use a mobile device or web browser to access our content</li>
+                <li>Contact us via email, social media, or on any similar technologies</li>
+                <li>When you mention us on social media</li>
+            </ul>
+
+            <h2>Security of Your Personal Information</h2>
+            <p>When we collect and process personal information, and while we retain this information, we will protect
+                it within commercially acceptable means to prevent loss and theft, as well as unauthorized access,
+                disclosure, copying, use, or modification.</p>
+
+            <p>Although we will do our best to protect the personal information you provide to us, we advise that no
+                method of electronic transmission or storage is 100% secure, and no one can guarantee absolute data
+                security.</p>
+
+            <p>You are responsible for selecting any password and its overall security strength, ensuring the security
+                of your own information within the bounds of our services.</p>
+
+            <h2>How Long We Keep Your Personal Information</h2>
+            <p>We keep your personal information only for as long as we need to. This time period may depend on what we
+                are using your information for, in accordance with this privacy policy. If your personal information is
+                no longer required, we will delete it or make it anonymous by removing all details that identify you.
+            </p>
+
+            <p>However, if necessary, we may retain your personal information for our compliance with a legal,
+                accounting, or reporting obligation or for archiving purposes in the public interest, scientific, or
+                historical research, or statistical purposes.</p>
+
+            <h2>Children’s Privacy</h2>
+            <p>We do not aim any of our products or services directly at children under the age of 13, and we do not
+                knowingly collect personal information about children under 13.</p>
+
+            <h2>Disclosure of Personal Information to Third Parties</h2>
+            <p>We may disclose personal information to:</p>
+
+            <ul>
+                <li>a parent, subsidiary, or affiliate of our company</li>
+                <li>third-party service providers for the purpose of enabling them to provide their services, for
+                    example, IT service providers, data storage, hosting and server providers, advertisers, or analytics
+                    platforms</li>
+                <li>our employees, contractors, and/or related entities</li>
+                <li>our existing or potential agents or business partners</li>
+                <li>sponsors or promoters of any competition, sweepstakes, or promotion we run</li>
+                <li>courts, tribunals, regulatory authorities, and law enforcement officers, as required by law, in
+                    connection with any actual or prospective legal proceedings, or in order to establish, exercise, or
+                    defend our legal rights</li>
+                <li>third parties, including agents or sub-contractors, who assist us in providing information,
+                    products,
+                    services, or direct marketing to you third parties to collect and process data</li>
+            </ul>
+
+            <h2>International Transfers of Personal Information</h2>
+            <p>The personal information we collect is stored and processed where we or our partners, affiliates, and
+                third-party providers maintain facilities. Please be aware that the locations to which we store,
+                process,
+                or transfer your personal information may not have the same data protection laws as the country in which
+                you initially provided the information. If we transfer your personal information to third parties in
+                other countries: (i) we will perform those transfers in accordance with the requirements of applicable
+                law; and (ii) we will protect the transferred personal information in accordance with this privacy
+                policy.
+            </p>
+
+            <h2>Your Rights and Controlling Your Personal Information</h2>
+            <p>You always retain the right to withhold personal information from us, with the understanding that your
+                experience of our website may be affected. We will not discriminate against you for exercising any of
+                your rights over your personal information. If you do provide us with personal information you
+                understand
+                that we will collect, hold, use and disclose it in accordance with this privacy policy. You retain the
+                right to request details of any personal information we hold about you.</p>
+
+            <p>If we receive personal information about you from a third party, we will protect it as set out in this
+                privacy policy. If you are a third party providing personal information about somebody else, you
+                represent and warrant that you have such person’s consent to provide the personal information to us.</p>
+
+            <p>If you have previously agreed to us using your personal information for direct marketing purposes, you
+                may
+                change your mind at any time. We will provide you with the ability to unsubscribe from our
+                email-database
+                or opt-out of communications. Please be aware we may need to request specific information from you to
+                help us confirm your identity.</p>
+
+            <p>If you believe that any information we hold about you is inaccurate, out of date, incomplete, irrelevant,
+                or misleading, please contact us using the details provided in this privacy policy. We will take
+                reasonable steps to correct any information found to be inaccurate, incomplete, misleading, or out of
+                date.</p>
+
+            <p>If you believe that we have breached a relevant data protection law and wish to make a complaint, please
+                contact us using the details below and provide us with full details of the alleged breach. We will
+                promptly investigate your complaint and respond to you, in writing, setting out the outcome of our
+                investigation and the steps we will take to deal with your complaint. You also have the right to contact
+                a
+                regulatory body or data protection authority in relation to your complaint.</p>
+
+            <h2>Use of Cookies</h2>
+            <p>We use “cookies” to collect information about you and your activity across our site. A cookie is a small
+                piece of data that our website stores on your computer, and accesses each time you visit, so we can
+                understand how you use our site. This helps us serve you content based on preferences you have
+                specified.
+            </p>
+
+            <h2>Limits of Our Policy</h2>
+            <p>Our website may link to external sites that are not operated by us. Please be aware that we have no
+                control
+                over the content and policies of those sites, and cannot accept responsibility or liability for their
+                respective privacy practices.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>At our discretion, we may change our privacy policy to reflect updates to our business processes, current
+                acceptable practices, or legislative or regulatory changes. If we decide to change this privacy policy,
+                we
+                will post the changes here at the same link by which you are accessing this privacy policy.</p>
+
+            <p>If required by law, we will get your permission or give you the opportunity to opt in to or opt out of,
+                as
+                applicable, any new uses of your personal information.</p>
+
+            <h2>Contact Us</h2>
+            <p>For any questions or concerns regarding your privacy, you may contact us using the following details:</p>
+
+            <p>Better Life<br>info@betterlife.com</p>
         </div>
-    </section>
+    </div>
 
     <footer class="text-white py-8">
         <div class="container-fluid p-5 footerdiv">
@@ -807,7 +822,6 @@
                                     <li class="my-3 text-subtitle-2" style="font-size: 14px; font-weight:500;">Term $
                                         Condition</li>
                                 </a>
-
                             </ul>
                         </div>
                         <div class="col-6">

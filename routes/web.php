@@ -123,4 +123,11 @@ Route::prefix('user')->group(function () {
     Route::get('/ManagePin', function () {
         return view('USER.ManagePin');
     });
+
+    Route::get('/Privay', function () {
+        return view('USER.Privay');
+    });
+    Route::get('/Term', function () {
+        return view('USER.Term');
+    });
 });
